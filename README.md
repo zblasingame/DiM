@@ -1,6 +1,8 @@
 
 # Diffusion Morphs (DiM)<br><sub>The official implementation of the 2024 IEEE TBIOM and 2024 IEEE S&P papers</sub>
 
+![Teaser image](./docs/assets/dim_morph_comp.png)
+
 **Leveraging Diffusion for Strong and High Quality Face Morphing Attacks**<br>
 Zander W. Blasingame and Chen Liu<br>
 [IEEE TBIOM](https://ieeexplore.ieee.org/document/10381591) [arXiv](https://arxiv.org/abs/2301.04218)
