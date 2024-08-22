@@ -17,7 +17,7 @@
   <meta name="twitter:title" content="DiM: Diffusion Morphs">
   <meta name="twitter:description" content="We present DiM, a novel framework for creating face morphs with diffusion models.">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="DiM, Diffusion, Face Morphing, Diffusion Morphs">
+  <meta name="keywords" content="DiM, Diffusion, Face Morphing, Diffusion Morphs, ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -77,18 +77,7 @@
                       </a>
                     </span>
 
-                    <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2310.09484" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>IEEE Security & Privacy</span>
-                      </a>
-                    </span>
-
-                <!-- ArXiv abstract Link -->
+                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2301.04218" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -99,17 +88,7 @@
                 </a>
               </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2310.09484" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>IEEE Security & Privacy</span>
-                </a>
-              </span>
-
+                      
                <!-- Github link -->
                 <span class="link-block">
                   <a href="https://github.com/zblasingame/DiM" target="_blank"
@@ -120,6 +99,30 @@
                   <span>Code</span>
                 </a>
               </span>
+
+                  <!-- Arxiv PDF link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/pdf/2310.09484" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>IEEE Security &amp; Privacy</span>
+                    </a>
+                  </span>
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2310.09484" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>IEEE Security &amp; Privacy</span>
+                </a>
+              </span>
+
             </div>
           </div>
         </div>
@@ -128,13 +131,13 @@
   </div>
 </section>
 
-<!-- Teaser video-->
+<!-- Teaser image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/dim_morph_comp.png" alt="morph visual comparison">
+      <img src="assets/dim_morph_comp.png" alt="Morph visual comparison">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+          We propose <b>Di</b>ffusion <b>M</b>orphs (<b>DiM</b>) a state-of-the-art method for creating morphed faces using diffusion models. Our proposed method has unrivaled visual fidelity and outperforms previous GAN-based face morphs. We illustrate the difference between our morphs and those produced by GANs and landmark-based methods. 
       </h2>
     </div>
   </div>
@@ -150,7 +153,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Face morphing attacks seek to deceive a Face Recognition (FR) system by presenting a morphed image consisting of the biometric qualities from two different identities with the aim of triggering a false acceptance with one of the two identities, thereby presenting a significant threat to biometric systems. The success of a morphing attack is dependent on the ability of the morphed image to represent the biometric characteristics of both identities that were used to create the image. We present a novel morphing attack that uses a Diffusion-based architecture to improve the visual fidelity of the image and the ability of the morphing attack to represent characteristics from both identities. We demonstrate the effectiveness of the proposed attack by evaluating its visual fidelity via the Frechet Inception Distance (FID). Also, extensive experiments are conducted to measure the vulnerability of FR systems to the proposed attack. The ability of a morphing attack detector to detect the proposed attack is measured and compared against two state-of-the-art GAN-based morphing attacks along with two Landmark-based attacks. Additionally, a novel metric to measure the relative strength between different morphing attacks is introduced and evaluated. 
+            Face morphing attacks seek to deceive a Face Recognition (FR) system by presenting a morphed image consisting of the biometric qualities from two different identities with the aim of triggering a false acceptance with one of the two identities, thereby presenting a significant threat to biometric systems. The success of a morphing attack is dependent on the ability of the morphed image to represent the biometric characteristics of both identities that were used to create the image. We present a novel morphing attack that uses a Diffusion-based architecture to improve the visual fidelity of the image and the ability of the morphing attack to represent characteristics from both identities.We demonstrate the effectiveness of the proposed attack by evaluating its visual fidelity via the Frechet Inception Distance (FID). Also, extensive experiments are conducted to measure the vulnerability of FR systems to the proposed attack. The ability of a morphing attack detector to detect the proposed attack is measured and compared against two state-of-the-art GAN-based morphing attacks along with two Landmark-based attacks. Additionally, a novel metric to measure the relative strength between different morphing attacks is introduced and evaluated. 
           </p>
         </div>
       </div>
@@ -159,6 +162,35 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="level-set has-text-justified">
+        <p>
+          The face morphing attack attempts to fool a Face Recongition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> orginal identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectivness in fooling the FR system leaves much to be desired. We propose DiM, a novel face morphing algorithm which combats this problem by producing highly effective morphs <em>with</em> high visual fidelity.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/dim_example_morph.png" alt="Example morphed image produced by DiM">
+    </div>
+  </div>
+</section>
+
+  <section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Proposed Face Morphing Method (DiM)</h2>
+      <div class="level-set has-text-justified">
+        <p>
+          Diffusion models can be used to generate images by solving the <i>Probability Flow</i> ODE which comes with the nice property that it is reversible. This means that given an intial image we can encode it into the noisy latent representation in a bijective manner. Using this property and an additional image encoder, i.e. the diffusion autoencoder, we can encode our bona fide images into a conditional and latent representation. We then interpolate between these two representations to produce our morphed representation. Then this morphed representation is used as the starting point for the diffusion model, ultimately produce the morphed image.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/dim_overview.png" alt="Overview of DiM method">
+      <p>
+        <strong>Overview of DiM</strong> Illustration of the morph creation process where green traces indicate identity <i>a</i>, red traces denote identity <i>b</i>, and blue traces denote the morphed image.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -167,40 +199,55 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="assets/dim_vs_mipgan.png" alt="DiM vs MIPGAN-II"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+           Detailed comparison between DiM and MIPGAN-II. Notice the prominent artefacts in MIPGAN-II morph and strage high-frequency textures overlaid across the skin. In comparison the DiM morph looks much more natural.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="assets/dim_mmpmr.png" alt="MMPMR Results"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Vulnerability of the FaceNet, VGGFace2, and ArcFace FR systems to different morphing attacks. Note, the newer and more accurate ArcFace FR system is more vulnerable to these attacks than older FR systems. Overall, DiM is the most effective morphing attack.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="assets/dim_ablation.png" alt="Ablation Study"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Ability of a morph detector to detect unseen morphing attacks. The morph detection algorithm is particularly vulnerable to DiM if not trained against it. 
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="assets/dim_preprocessing.png" alt="Preprocessing variants"/>
+        <h2 class="subtitle has-text-centered">
+         Impact of pre-processing and interpolation on morphed images. Variant A has no pre-processing and uses spherical linear interpolation (slerp) for the noisy latents. Variant B has no pre-processing and uses linear interpolation. Variant C uses a pixel-wise average pre-morph and slerp. Variant D uses an OpenCV based pre-morph and slerp. We observe that the interpolation strategy plays a large impact on the appearance of the morphed images, see Variant A vs Variant B. Variant C has slightly fewer visual artefacts than Variant A.
+       </h2>
+     </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
-
-
+  
+  <section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Fast-DiM: Towards Fast Diffusion Morphs</h2>
+      <div class="level-set has-text-justified">
+        <p>
+          By using higher-order numerical ODE solvers to solve the <i>Probability Flow</i> ODE we can reduce the number of Network Function Evaluations (NFE) while maintaining comparable morphing performance to the vanilla DiM variants. We call this method which uses higher-order ODE solvers, Fast-DiM.
+        </p>
+      </div>
+      <img class="blend-img-background center-image" src="assets/fast_dim_mmpmr.png" alt="Fast-DiM MMPMR">
+      <p>
+        <strong>Fast-DiM Results</strong> Fast-DiM achieves similar performance to the vanilla DiM variants with a <em>significant</em> reduction in NFE.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -257,8 +304,11 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
+        <h2 class="title">Acknowledgements</h2>
         <div class="content">
-
+          <p>
+            This work was supported by the Center for Identification Technology Research (CITeR) and National Science Foundation (NSF) under Grant 1650503.
+          </p>
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
