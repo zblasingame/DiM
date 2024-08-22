@@ -13,6 +13,9 @@ Zander W. Blasingame and Chen Liu<br>
 
 Abstract: *Diffusion Morphs (DiM) are a recent state-of-the-art method for creating high quality face morphs; however, they require a high number of network function evaluations (NFE) to create the morphs. We propose a new DiM pipeline, Fast-DiM, which can create morphs of a similar quality but with fewer NFE. We investigate the ODE solvers used to solve the Probability Flow ODE and the impact they have on the the creation of face morphs. Additionally, we employ an alternative method for encoding images into the latent space of the Diffusion model by solving the Probability Flow ODE as time runs forwards. Our experiments show that we can reduce the NFE by upwards of 85% in the encoding process while experiencing only 1.6\% reduction in Mated Morph Presentation Match Rate (MMPMR). Likewise, we showed we could cut NFE, in the sampling process, in half with only a maximal reduction of 0.23% in MMPMR.*
 
+## Code Access
+Sign the [code request form](CITeR_SoftwareReleaseAgreeement.docx) and send it to [citer@clarkson.edu](mailto:citer@clarkson.edu?subject=[GitHub]%20DiM%20Source%20Code%20Request)
+
  ## Citation
 ```bibtex
 @article{blasingame_dim,
