@@ -199,28 +199,28 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="assets/dim_vs_mipgan.png" alt="DiM vs MIPGAN-II"/>
+        <img class="center-image" src="assets/dim_vs_mipgan.png" alt="DiM vs MIPGAN-II"/>
         <h2 class="subtitle has-text-centered">
            Detailed comparison between DiM and MIPGAN-II. Notice the prominent artefacts in MIPGAN-II morph and strage high-frequency textures overlaid across the skin. In comparison the DiM morph looks much more natural.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="assets/dim_mmpmr.png" alt="MMPMR Results"/>
+        <img class="center-image" src="assets/dim_mmpmr.png" alt="MMPMR Results"/>
         <h2 class="subtitle has-text-centered">
           Vulnerability of the FaceNet, VGGFace2, and ArcFace FR systems to different morphing attacks. Note, the newer and more accurate ArcFace FR system is more vulnerable to these attacks than older FR systems. Overall, DiM is the most effective morphing attack.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="assets/dim_ablation.png" alt="Ablation Study"/>
+        <img class="center-image" src="assets/dim_ablation.png" alt="Ablation Study"/>
         <h2 class="subtitle has-text-centered">
          Ability of a morph detector to detect unseen morphing attacks. The morph detection algorithm is particularly vulnerable to DiM if not trained against it. 
        </h2>
      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="assets/dim_preprocessing.png" alt="Preprocessing variants"/>
+        <img class="center-image" src="assets/dim_preprocessing.png" alt="Preprocessing variants"/>
         <h2 class="subtitle has-text-centered">
          Impact of pre-processing and interpolation on morphed images. Variant A has no pre-processing and uses spherical linear interpolation (slerp) for the noisy latents. Variant B has no pre-processing and uses linear interpolation. Variant C uses a pixel-wise average pre-morph and slerp. Variant D uses an OpenCV based pre-morph and slerp. We observe that the interpolation strategy plays a large impact on the appearance of the morphed images, see Variant A vs Variant B. Variant C has slightly fewer visual artefacts than Variant A.
        </h2>
