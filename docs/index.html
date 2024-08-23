@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="We present DiM, a novel framework for creating face morphs with diffusion models.">
   <meta property="og:title" content="DiM: Diffusion Morphs"/>
   <meta property="og:description" content="We present DiM, a novel framework for creating face morphs with diffusion models."/>
   <meta property="og:url" content="https://zblasingame.github.io/DiM"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/> -->
@@ -22,7 +22,7 @@
 
 
   <title>DiM: Diffusion Morphs</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -153,7 +153,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Face morphing attacks seek to deceive a Face Recognition (FR) system by presenting a morphed image consisting of the biometric qualities from two different identities with the aim of triggering a false acceptance with one of the two identities, thereby presenting a significant threat to biometric systems. The success of a morphing attack is dependent on the ability of the morphed image to represent the biometric characteristics of both identities that were used to create the image. We present a novel morphing attack that uses a Diffusion-based architecture to improve the visual fidelity of the image and the ability of the morphing attack to represent characteristics from both identities.We demonstrate the effectiveness of the proposed attack by evaluating its visual fidelity via the Frechet Inception Distance (FID). Also, extensive experiments are conducted to measure the vulnerability of FR systems to the proposed attack. The ability of a morphing attack detector to detect the proposed attack is measured and compared against two state-of-the-art GAN-based morphing attacks along with two Landmark-based attacks. Additionally, a novel metric to measure the relative strength between different morphing attacks is introduced and evaluated. 
+            Face morphing attacks seek to deceive a Face Recognition (FR) system by presenting a morphed image consisting of the biometric qualities from two different identities with the aim of triggering a false acceptance with one of the two identities, thereby presenting a significant threat to biometric systems. The success of a morphing attack is dependent on the ability of the morphed image to represent the biometric characteristics of both identities that were used to create the image. We present a novel morphing attack that uses a Diffusion-based architecture to improve the visual fidelity of the image and the ability of the morphing attack to represent characteristics from both identities.We demonstrate the effectiveness of the proposed attack by evaluating its visual fidelity via the Fr&eacute;chet Inception Distance (FID). Also, extensive experiments are conducted to measure the vulnerability of FR systems to the proposed attack. The ability of a morphing attack detector to detect the proposed attack is measured and compared against two state-of-the-art GAN-based morphing attacks along with two Landmark-based attacks. Additionally, a novel metric to measure the relative strength between different morphing attacks is introduced and evaluated. 
           </p>
         </div>
       </div>
@@ -167,7 +167,7 @@
     <div class="container is-max-desktop">
       <div class="level-set has-text-justified">
         <p>
-          The face morphing attack attempts to fool a Face Recongition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> orginal identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectivness in fooling the FR system leaves much to be desired. We propose DiM, a novel face morphing algorithm which combats this problem by producing highly effective morphs <em>with</em> high visual fidelity.
+          The face morphing attack attempts to fool a Face Recongition (FR) system by producing a <em>single</em> image which registers a false accept with <em>both</em> original identities. Previous face morphing attacks used landmark-based methods which align and warp the two faces before performing a pixel-wise average between the two faces. Such techniques are prone to considerably artefacts, especially outside the center of the face. Conversely, Generative Adversarial Network (GAN) based morphs produce more realistic looking faces but their performance, but their effectiveness in fooling the FR system leaves much to be desired. We propose DiM, a novel face morphing algorithm which combats this problem by producing highly effective morphs <em>with</em> high visual fidelity.
         </p>
       </div>
       <img class="blend-img-background center-image" src="assets/dim_example_morph.png" alt="Example morphed image produced by DiM">
@@ -181,7 +181,7 @@
       <h2 class="title is-3">Proposed Face Morphing Method (DiM)</h2>
       <div class="level-set has-text-justified">
         <p>
-          Diffusion models can be used to generate images by solving the <i>Probability Flow</i> ODE which comes with the nice property that it is reversible. This means that given an intial image we can encode it into the noisy latent representation in a bijective manner. Using this property and an additional image encoder, i.e. the diffusion autoencoder, we can encode our bona fide images into a conditional and latent representation. We then interpolate between these two representations to produce our morphed representation. Then this morphed representation is used as the starting point for the diffusion model, ultimately produce the morphed image.
+          Diffusion models can be used to generate images by solving the <i>Probability Flow</i> ODE which comes with the nice property that it is reversible. This means that given an initial image we can encode it into the noisy latent representation in a bijective manner. Using this property and an additional image encoder, i.e. the diffusion autoencoder, we can encode our bona fide images into a conditional and latent representation. We then interpolate between these two representations to produce our morphed representation. Then this morphed representation is used as the starting point for the diffusion model, ultimately produce the morphed image.
         </p>
       </div>
       <img class="blend-img-background center-image" src="assets/dim_overview.png" alt="Overview of DiM method">
