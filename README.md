@@ -1,7 +1,9 @@
 
 # Diffusion Morphs (DiM) - Official PyTorch implementation
 
-![Teaser image](./docs/assets/dim_morph_comp.png)
+![Two FRLL identity pairs through six morphing pipelines — Identity A, FaceMorpher, OpenCV, DiM (ours), StyleGAN2, MIPGAN-II, Identity B](./docs/assets/dim_figure4_teaser.png)
+
+> *Figure 4 from the [press release](./docs/index.html).* Landmark methods leave ghosting around eyes and jawlines; GAN methods introduce identity-bleed artefacts in skin and hair; **DiM**'s morphs sit in-distribution with the diffusion autoencoder, leaving no obvious tell.
 
 This repository contains the official PyTorch implementation of the following papers:
 
